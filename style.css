@@ -1,0 +1,737 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-family: 'Lato', sans-serif;
+    outline: none;
+    text-decoration: none;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    -webkit-appearance: none
+}
+#logo {
+    max-width:20%
+}
+
+img {
+    max-width:100%
+}
+.title {
+    font-weight: 800;
+     font-size: 30px;
+      text-align: center;
+     margin: 40px 0 22px;
+    
+ }
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+
+
+::placeholder {
+    color: #bdbdbd;
+    font-weight: 400
+}
+
+.dNone {
+    display: none
+}
+
+.fs14 {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: underline;
+    color: #f99d1c;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    background: #eee;
+}
+
+.header {
+    position: static;
+    top: 0px;
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.13);
+    width: 100%;
+    text-align: center;
+    z-index: 9;
+    margin-bottom: 15px;
+}
+
+.header a.logo {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.title img {
+    display: block;
+    margin: 10px auto 20px;
+}
+
+.ssoContainer,
+.container2 {
+    box-sizing: unset;
+    width: 450px;
+    margin: 0 auto 40px;
+    padding: 40px;
+    background: #fff;
+    border: solid 1px #e0e0e0;
+    position: relative;
+}
+
+a.icgl {
+    background: url("https://accounts.hindustantimes.com/images/icgl.svg") no-repeat 138px center #eee;
+    border-radius: 2px;
+    padding-left: 170px;
+    line-height: 44px;
+    display: block;
+    margin: 0 0 16px;
+    width: 100%;
+    height: 44px;
+    color: #212121 !important;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a.icfb {
+    background: url("https://accounts.hindustantimes.com/images/icfb.svg") no-repeat 138px center #1877f2;
+    border-radius: 2px;
+    padding-left: 170px;
+    line-height: 44px;
+    display: block;
+    margin: 0 0 16px;
+    width: 100%;
+    height: 44px;
+    color: #fff !important;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a.iconapple {
+    background: url("https://images.livemint.com/sso/appleid_iconlogo.png") no-repeat 138px center #000;
+    border-radius: 2px;
+    padding-left: 170px;
+    line-height: 44px;
+    display: block;
+    margin: 0 0 16px;
+    width: 100%;
+    height: 44px;
+    color: #fff !important;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    background-size: 21px 21px;
+}
+
+.or {
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    background: #fff;
+    padding: 0 10px;
+    font-weight: 700;
+    color: #757575;
+    margin: 5px 0 20px;
+}
+
+.or span {
+    background: #fff;
+    padding: 0 10px;
+    position: relative;
+}
+
+.or::before {
+    content: " ";
+    position: absolute;
+    top: 9px;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background: #dbdbdb;
+}
+
+.label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.label span {
+    color: #ff0000;
+}
+
+.inputHolder {
+    position: relative;
+}
+
+.inputHolder input:placeholder-shown {
+    color: #757575;
+    font-weight: 400;
+}
+
+.inputHolder input {
+    width: 100%;
+    font-size: 16px;
+    padding: 14px;
+    color: #424242;
+    border: solid 1px #e0e0e0;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.inputHolder input.otp {
+    text-align: center;
+    width: 15%;
+    margin-left: 1.2%;
+}
+
+.inputHolder input.otp:first-child {
+    margin-left: 0;
+}
+
+.inputHolder .errorBox {
+    display: none
+}
+
+.inputHolder.error input {
+    border: solid 1px #ff0000
+}
+
+.inputHolder.error .errorBox {
+    display: block;
+    color: #ff0000;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.inputHolder.error .errorBox span {
+    display: block;
+    color: #424242
+}
+
+.inputHolder.error .errorBox span a {
+    color: #ff0000;
+    text-decoration: underline
+}
+
+.ssoContainer input:disabled[type="button"] {
+    background: #dbdbdb;
+    border: 1px solid #dbdbdb;
+    cursor: not-allowed;
+}
+
+.btnHolder {
+    text-align: center;
+    padding-top: 24px;
+}
+
+.inputSec {
+    margin-bottom: 16px;
+}
+
+.formHolder .btn {
+    text-align: center;
+    background: #f99d1c;
+    border: 1px solid #f99d1c;
+    color: #fff;
+    margin: 20px 20px 0 0;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 24px;
+    padding: 16px 50px;
+}
+
+.formHolder .btn2 {
+    text-align: center;
+    background: #fff;
+    border: 1px solid #f99d1c;
+    color: #f99d1c;
+    margin: 20px 20px 0 0;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 24px;
+    padding: 16px 50px;
+}
+
+input:focus {
+    border: 1px solid #f99d1c;
+}
+
+.contentSec,
+.contentSec2 {
+    text-align: center;
+    line-height: 22px;
+    font-size: 16px;
+    color: #212121;
+    margin: 30px 0 60px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.time {
+    color: #757575;
+}
+
+.eye {
+    background: url("https://accounts.hindustantimes.com/images/eye.svg") no-repeat 0 -23px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 19px;
+    right: 10px;
+    cursor: pointer
+}
+
+.eye.block {
+    background-position: 0 0;
+    top: 22px
+}
+
+.strengthBar,
+.weak2,
+.strong2 {
+    height: 6px;
+    border-radius: 2px;
+    background-color: #dbdbdb;
+    width: 100%;
+    position: relative
+}
+
+.pswStrength .weak1,
+.pswStrength .weak2,
+.pswStrength .strong1,
+.pswStrength .strong2 {
+    display: none;
+}
+
+.pswStrength.weak .weak1,
+.pswStrength.weak .weak2,
+.pswStrength.strong .strong1,
+.pswStrength.strong .strong2 {
+    display: inline-block;
+}
+
+.pswStrength.weak .weak1 {
+    color: #ff0000;
+    margin-left: 10px;
+    float: right;
+}
+
+.pswStrength.weak .weak2 {
+    background-color: #ff0000;
+    position: absolute;
+}
+
+.pswStrength.strong .strong1 {
+    color: #43a047;
+    margin-left: 10px;
+    float: right;
+}
+
+.pswStrength.strong .strong2 {
+    background-color: #43a047;
+    position: absolute;
+}
+
+ul.pswCriteria {
+    margin: 30px 0 10px;
+}
+
+ul.pswCriteria li {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 32%;
+    font-weight: 400;
+    font-size: 12px;
+    color: #757575;
+    background: url("https://images.livemint.com/img/static/check_grey.svg") no-repeat 0 -1px;
+    padding-left: 22px;
+    vertical-align: top;
+}
+
+ul.pswCriteria li.matched {
+    background: url("https://images.livemint.com/img/static/check_green.svg") no-repeat 0 -1px;
+    color: #43a047;
+}
+
+.newsletter {
+    font-size: 16px;
+    color: #212121;
+    margin: 25px 0;
+}
+
+.checkHolder {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.checkHolder input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 29px;
+    width: 29px;
+    background-color: #ddd
+}
+
+.checkHolder:hover input~.checkmark {
+    background-color: #ddd
+}
+
+.checkHolder input:checked~.checkmark {
+    background-color: #f99d1c
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none
+}
+
+.checkHolder input:checked~.checkmark:after {
+    display: block
+}
+
+.checkHolder .checkmark:after {
+    left: 10px;
+    top: 6px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.nslabel {
+    margin: 4px 0 0 40px;
+}
+
+.inputHolder.country input {
+    padding-left: 106px;
+    ;
+}
+
+.inputHolder .countryCode {
+    display: none;
+}
+
+.inputHolder.country .countryCode {
+    display: block;
+}
+
+.inputHolder.country .countryCode select {
+    font-size: 16px;
+    font-weight: 700;
+    color: #212121;
+    padding: 14px;
+    position: absolute;
+    left: 2px;
+    top: 1px;
+    border: 0;
+    border-right: 1px solid #dbdbdb;
+}
+
+.footer {
+    text-align: center;
+    color: #212121;
+    font-size: 16px;
+    margin-top: 100px;
+}
+
+.footer * {
+    display: block;
+    margin: 10px auto 0;
+}
+
+.loader {
+    width: 100%;
+    position: relative;
+    height: 2px;
+    background: #e9e9e9;
+    margin: 10px 0
+}
+
+.loader .loaderBar {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background: #535353;
+    animation: loading 2s infinite 0s ease-in-out
+}
+
+.invoice {
+    padding: 15px 0;
+    border-top: 1px solid #e0e0e0;
+    font-size: 12px;
+    color: #757575;
+    line-height: 24px
+}
+
+.invoice:first-of-type {
+    padding-top: 0;
+    border: 0
+}
+
+.invoice strong {
+    display: block;
+    font-size: 16px;
+    color: #212121
+}
+
+.invoice a.download {
+    background: url("http://images.livemint.com/img/static/downloadInvoice.svg") no-repeat 0 0;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-top: 16px
+}
+
+.alignC {
+    text-align: center;
+}
+
+a.back {
+    display: inline-block;
+    text-decoration: none;
+    padding-top: 20px;
+    color: #808080;
+    font-size: 14px;
+    font-weight: 700;
+    background: url(/images/back.svg) no-repeat 0 21px;
+    padding-left: 21px;
+}
+
+.container2 {
+    background: none;
+    border: 0;
+    padding: 0;
+    width: 530px;
+}
+
+@keyframes loading {
+    0% {
+        width: 0
+    }
+
+    100% {
+        width: 100%
+    }
+}
+
+.containerRadio {
+    display: block;
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 700;
+}
+
+.containerRadio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radiomark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #212121
+}
+
+.containerRadio:hover input~.radiomark {
+    background-color: #ccc;
+}
+
+.containerRadio input:checked~.radiomark {
+    background-color: #fff;
+}
+
+.radiomark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.containerRadio input:checked~.radiomark:after {
+    display: block;
+}
+
+.containerRadio .radiomark:after {
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #212121;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    body {
+        background: #fff;
+    }
+
+    .ssoContainer,
+    .container2 {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        border: 0;
+    }
+
+    a.icgl {
+        background-position: 98px center;
+        padding-left: 130px;
+    }
+
+    a.icfb {
+        background-position: 98px center;
+        padding-left: 130px;
+    }
+
+    a.iconapple {
+        background-position: 98px center;
+        padding-left: 130px;
+    }
+
+    a.ictc {
+        background-position: 98px center;
+        padding-left: 130px;
+    }
+
+    .inputHolder input.otp {
+        width: 14.75%;
+    }
+
+    .formHolder .btn2 {
+        margin-right: 15px;
+    }
+
+    .container2 {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    a.icgl {
+        background-position: 80px center;
+        padding-left: 110px;
+    }
+
+    a.icfb {
+        background-position: 80px center;
+        padding-left: 110px;
+    }
+
+    a.iconapple {
+        background-position: 80px center;
+        padding-left: 110px;
+    }
+
+    a.ictc {
+        background-position: 80px center;
+        padding-left: 110px;
+    }
+}
+
+@media (max-width: 360px) {
+    a.icgl {
+        background-position: 70px center;
+        padding-left: 100px;
+    }
+
+    a.icfb {
+        background-position: 70px center;
+        padding-left: 100px;
+    }
+
+    a.iconapple {
+        background-position: 70px center;
+        padding-left: 100px;
+    }
+
+    a.ictc {
+        background-position: 70px center;
+        padding-left: 100px;
+    }
+
+    .intl-tel-input .country-list.dropup {
+        width: 315px;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}

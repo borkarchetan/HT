@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://images.livemint.com/sso/ico/ht_favi.ico" />
+    <title>A Hindustan Times Group Website - One Network. One Account - javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header clearfix">
+        <div class="container">
+            <img id="logo" src="https://images.livemint.com/sso/newLogos/prod/ht_logo.svg?v2" alt="">
+        </div>
+    </div>
+    <div class="title"><h4>Login or Register</h4></div>
+    <div class="ssoContainer">
+        <div class="clearfix btnSec" id="socialLinks">
+
+
+            <a class="icgl" alt="Google Login"
+                href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?scope=email%20profile&include_granted_scopes=true&response_type=token&state=state_parameter_passthrough_value&redirect_uri=https%3A%2F%2Faccounts.hindustantimes.com%2Fgoogle_oauth&client_id=59036276639-9ufea2catbasbmb6mmjn7kdsgpma6edn.apps.googleusercontent.com&flowName=GeneralOAuthFlow">Sign
+                in with Google</a>
+
+            <a class="icfb" alt="Facebook Login"
+                href="https://www.facebook.com/v12.0/dialog/oauth?app_id=2140564542847120&cbt=1651685263643&channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df13f2799902da84%26domain%3Daccounts.hindustantimes.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Faccounts.hindustantimes.com%252Ff257ea0eaa15d2c%26relation%3Dopener&client_id=2140564542847120&display=popup&domain=accounts.hindustantimes.com&e2e=%7B%7D&fallback_redirect_uri=https%3A%2F%2Faccounts.hindustantimes.com%2F%3FhtMoe%3D&locale=en_US&logger_id=f158a849818555&origin=1&redirect_uri=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2bc9da7b59a67c%26domain%3Daccounts.hindustantimes.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Faccounts.hindustantimes.com%252Ff257ea0eaa15d2c%26relation%3Dopener%26frame%3Df1a692419407c68&response_type=token%2Csigned_request%2Cgraph_domain&return_scopes=true&scope=public_profile%2Cemail&sdk=joey&version=v12.0">Sign
+                in with Google</a>
+
+            <a class="iconapple" alt="Apple Login"
+                href="https://appleid.apple.com/auth/authorize?client_id=com.ht.htiphoneenglishapp.service&redirect_uri=https%3A%2F%2Faccounts.hindustantimes.com%2Fauth_apple&response_type=code%20id_token&scope=name%20email&nonce=%5BNONCE%5D&response_mode=form_post&state=HT">Sign
+                in with Apple</a>
+        </div>
+
+        <div class="or"><span>OR</span></div>
+        <div class="formHolder">
+            <div class="inputSec">
+                <div class="label">Email or Mobile Number<span>*</span></div>
+                <div class="inputHolder" id="phoneNum">
+                    <input type="text" value="" id="phoneEmail" required="" onkeyup="manage(this)">
+                    <div class="countryCode">
+                        <div id="phone" type="tel"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="btnHolder">
+                <input type="button" id="btSubmit" value="Continue" class="btn" disabled>
+            </div>
+            <div class="footer">
+                <p class="fs14">Powered by</p>
+                <img src="https://images.livemint.com/img/static/ht-digital-logo.svg">
+                <p>One network. One account</p>
+                <img src="https://images.livemint.com/dev/LHNewFooterLogoDesk.svg" width="292">
+            </div>
+        </div>
+</body>
+
+</html>
+<script src="sign.js"></script>
